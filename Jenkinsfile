@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git branch: 'master', url: 'https://github.com/thipparedi/warrepo1.git'
+        git branch: 'dev1', url: 'https://github.com/cdpipeline/vetinary-care-solutions.git'
       }
     }
     stage ('build') {
