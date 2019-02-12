@@ -1,10 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('build') {
+    stage('checkout') {
       steps {
-        sh 'mvn clean package'
+        git branch: 'master', url: 'https://github.com/sreehari112/jenkins.git'
       }
     }
+    stage ('build') {
+      steps {
+        sh 'mvn clean package'
+   }
+}
   }
 }
