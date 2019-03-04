@@ -8,7 +8,7 @@ pipeline {
             {
                 script
                 {
-                 git 'https://github.com/thippreddy/warrepo.git'
+                 git 'https://github.com/thippreddy/warrepo1.git'
                 }
             }
         }
